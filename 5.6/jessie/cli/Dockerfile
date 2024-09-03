@@ -14,10 +14,6 @@ echo "deb-src [trusted=yes] http://archive.debian.org/debian-archive/debian/ jes
 echo "deb [trusted=yes] http://archive.debian.org/debian-archive/debian-security jessie/updates main contrib non-free" >> /etc/apt/sources.list.d/jessie.list
 EOT
 
-#RUN ls -altr /etc/apt/
-#RUN ls -altr /etc/apt/sources.list.d/
-#RUN ls -altr /etc/apt/apt.conf.d/
-
 # prevent Debian's PHP packages from being installed
 # https://github.com/docker-library/php/pull/542
 RUN set -eux; \
